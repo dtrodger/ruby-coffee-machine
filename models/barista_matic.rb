@@ -8,19 +8,19 @@ class BaristaMatic
 	end
 
 	def display_inventory_menu
-		output_string = "Inventory:\n"
+		intenvotry_and_menu = "Inventory:\n"
 
 		self.stocked_ingredients.each do |stocked_ingredient|
-			output_string += " " + stocked_ingredient[1].type + "," + stocked_ingredient[0].to_s + "\n"
+			intenvotry_and_menu += " " + stocked_ingredient[1].type + "," + stocked_ingredient[0].to_s + "\n"
 		end
 
 		output_string += "Menu:\n"
 
 		self.drink_options.each_with_index do |drink_option, i|
-			output_string += " " + (i + 1).to_s + "," + drink_option.name + ",$" + drink_option.price + ",\n"
+			intenvotry_and_menu += " " + (i + 1).to_s + "," + drink_option.name + ",$" + drink_option.price + ",\n"
 		end
 
-		output_string
+		intenvotry_and_menu
 	end
 
 	def restock_ingredients
