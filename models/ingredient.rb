@@ -1,4 +1,3 @@
-
 class Ingredient
 	attr_accessor :type, :price
 
