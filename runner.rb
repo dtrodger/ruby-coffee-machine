@@ -1,3 +1,3 @@
-require_relative 'views/game'
+require_relative 'views/baristamatic_view'
 
-Game.start()
+RunBaristaMatic.start()

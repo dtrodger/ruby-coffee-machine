@@ -2,7 +2,7 @@ require_relative '../controller'
 
 include BaristaMaticReqs
 
-module Game
+module RunBaristaMatic
 	def self.start
 		barista_matic = BaristaMaticReqs.get_barista_matic
 
