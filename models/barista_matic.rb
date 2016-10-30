@@ -1,5 +1,3 @@
-require 'bigdecimal'
-
 class BaristaMatic
 
 	attr_accessor :stocked_ingredients, :drink_options
