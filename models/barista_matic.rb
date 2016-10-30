@@ -17,7 +17,7 @@ class BaristaMatic
 		intenvotry_and_menu += "Menu:\n"
 
 		self.drink_options.each_with_index do |drink_option, i|
-			intenvotry_and_menu += " " + (i + 1).to_s + "," + drink_option.name + ",$" + drink_option.price + ",\n"
+			intenvotry_and_menu += " " + (i + 1).to_s + "," + drink_option.name + ",$" + drink_option.price + "," + self.drink_available?(drink_option).to_s + "\n"
 		end
 
 		intenvotry_and_menu

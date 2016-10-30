@@ -21,6 +21,8 @@ module Game
 				drink_choice = barista_matic.drink_options[input_int -1]
 
 				barista_matic.take_order(drink_choice)
+			else
+				puts "Invalid selection: " + input
 			end
 		end
 	end
